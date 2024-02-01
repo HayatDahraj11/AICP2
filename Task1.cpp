@@ -18,6 +18,8 @@ public:
 
         for (int i = 0; i < MAX_PUPILS; ++i) 
         {
+
+            
             cout << "Enter name for pupil " << i + 1 << ": ";
             cin >> names[i];
 
@@ -88,8 +90,10 @@ int main()
 
     pupilRecord.inputWeightsAndNames();
     pupilRecord.calculateWeightDifference();
+
     pupilRecord.outputPupilData();
     pupilRecord.outputWeightDifference();
+
     pupilRecord.outputRiseOrFall();
 
     return 0;
