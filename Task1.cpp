@@ -3,7 +3,8 @@
 
 using namespace std;
 
-class PupilRecord {
+class PupilRecord 
+{
 private:
     static const int MAX_PUPILS = 30;
     string names[MAX_PUPILS];
