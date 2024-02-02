@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include <string>
 
 using namespace std;
@@ -19,7 +20,7 @@ public:
         for (int i = 0; i < MAX_PUPILS; ++i) 
         {
 
-            
+
             cout << "Enter name for pupil " << i + 1 << ": ";
             cin >> names[i];
 
@@ -39,6 +40,8 @@ public:
 
     void calculateWeightDifference() 
     {
+
+
         cout << "\nRecording weights on the last day of term:" << endl;
 
         for (int i = 0; i < MAX_PUPILS; ++i) 
