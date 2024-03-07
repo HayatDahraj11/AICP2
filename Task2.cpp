@@ -75,7 +75,10 @@ public:
     
      {
         double total = 0;
-        for (double payment : payments) {
+        for (double payment : payments) 
+        
+        
+        {
             total += payment;
         }
         return total;
@@ -111,17 +114,17 @@ int main()
         // Task 2
         string name;
         double payment;
-        cout << "Enter name and payment for each participant:" << endl;
+        cout << " Please  enter name and payment for each participant:" << endl;
         for (int i = 0; i < numOfSeniors; ++i) 
         {
-            cout << "Participant " << i + 1 << ": ";
+            cout << "Participant   " << i + 1 << ": ";
             cin >> name >> payment;
             outingManager.addParticipant(name, payment);
         }
 
         // Task 3 is done here
         double totalCollected = outingManager.calculateTotalCollected();
-        cout << "Total amount ccollected: $" << totalCollected << endl;
+        cout << "Total amount ccollected is : $" << totalCollected << endl;
         outingManager.printParticipantList();
 
         // Checking if profit or break-even
